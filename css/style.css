@@ -299,6 +299,89 @@ footer {
     color: var(--secondary);
 }
 
+
+/* Hero Image with text */
+/* Hero */
+
+.care-hero{
+    background:url("../image/care_hero.jpg") center center/cover no-repeat;
+    height:350px;
+    display:flex;
+    align-items:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:450px;
+}
+
+.hero-content h5{
+    font-size:18px;
+    font-weight:700;
+}
+
+.hero-content h1{
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:15px;
+}
+
+/* Section Title */
+
+.section-title{
+    color:#6f8757;
+    font-weight:700;
+}
+
+/* Plant Card */
+.main-content{
+    padding-top: 22px;
+    padding-bottom: 40px;
+}
+/* ber ot use know vea jun muy navbar  */
+.plant-section h2
+.know-section h2{
+    color: #718558;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+/* Tips care plants */
+
+.tip-card{
+    background:#d8e6d0;
+    border-radius:10px;
+    padding:25px;
+    height:100%;
+}
+
+.tip-card h3{
+    color:#6f8757;
+    font-size:18px;
+}
+
+.tip-card h4{
+    color:#6f8757;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.tip-card p{
+    color:#555;
+    font-size:14px;
+}
+
+
+
+
+
 @media (max-width: 768px) {
     .footer-inner {
         grid-template-columns: 1fr;
@@ -313,3 +396,4 @@ footer {
         padding: 2rem 1rem 0;
     }
 }
+
