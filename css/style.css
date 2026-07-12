@@ -195,7 +195,7 @@ body {
     background: var(--primary);
     border: none;
     cursor: pointer;
-    transition: background .2s;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .dot.active {
@@ -260,7 +260,7 @@ footer {
     font-size: 1rem;
     margin-right: 0.4rem;
     text-decoration: none;
-    transition: background .2s, color .2s;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .footer-socials a:hover {
@@ -300,70 +300,144 @@ footer {
 }
 
 
-/* ============ Hero Image with text ================*/
-/* 1. Hero */
-.hero-section {
-    background-image: linear-gradient(rgba(21, 58, 29, 0.42), rgba(21, 58, 29, 0.45)), url("../image/care_hero.jpg");
-    background-position: center;
-    background-size: cover;
+/* care plant web page Hero Image with text */
+
+.care-hero{
+    background:url("../image/care_hero.jpg") center center/cover no-repeat;
+    height:350px;
+    display:flex;
+    align-items:center;
+    color:white;
 }
 
-.min-vh-50 {
-    min-height: 50vh;
+.hero-content{
+    max-width:450px;
 }
 
-/* 2. 12 card with image */
-.section-space {
-    padding: 56px 0;
-
+.hero-content h5{
+    font-size:18px;
+    font-weight:700;
 }
 
+.hero-content h1{
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:15px;
+}
+
+
+
+.main-content {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.plant-section {
+    max-width: 980px;
+    margin: auto;
+}
+
+.plant-section h2 {
+    color: #4f7d41;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
 
 .plant-card {
-    background-color: #D9D9D9;
-    border: 1px solid #dce8d4;
-    border-radius: 30px;
+    background-color: #ffffff;
+    border: 1px solid #d8e6d0;
+    border-radius: 8px;
     overflow: hidden;
-    margin: 10px 80px;
-    box-shadow: 0 8px 20px rgba(42, 68, 40, 0.08);
+    box-shadow: 0 8px 22px rgba(58, 83, 48, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.h5-text-color{
-    color:#718558;
+
+.plant-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(58, 83, 48, 0.18);
 }
 
 .plant-img {
     width: 100%;
-    height: 260px;
+    height: 245px;
     object-fit: cover;
+    display: block;
 }
 
+.plant-card .p-4 {
+    padding: 26px !important;
+}
+
+.h5-text-color {
+    color: #6c8d44;
+    font-style: italic;
+    font-size: 1.35rem;
+    margin-bottom: 14px;
+}
+
+.plant-card ul {
+    color: #3f4c3a;
+    line-height: 1.75;
+}
+
+.plant-card li {
+    margin-bottom: 3px;
+}
+
+.plant-card.flex-md-row-reverse {
+    background-color: #fbfdf8;
+}
+
+/* Section Title */
+.section-title {
+    color: #6f8757;
+    font-weight: 700;
+}
 
 /* Tips care plants */
-.tip-card{
-    background:#d8e6d0;
-    border-radius:10px;
-    padding:25px;
-    height:100%;
+.tip-card {
+    background: #d8e6d0;
+    border-radius: 10px;
+    padding: 25px;
+    height: 100%;
 }
 
-.tip-card h3{
-    color:#6f8757;
-    font-size:18px;
+.tip-card h3 {
+    color: #6f8757;
+    font-size: 18px;
 }
 
-.tip-card h4{
-    color:#6f8757;
-    font-weight:bold;
-    margin:10px 0;
+.tip-card h4 {
+    color: #6f8757;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
-.tip-card p{
-    color:#555;
-    font-size:14px;
+.tip-card p {
+    color: #555;
+    font-size: 14px;
 }
 
 
+@media (max-width: 991px) {
+    .main-content {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
 
+    .plant-section {
+        max-width: 760px;
+    }
+
+    .plant-img {
+        height: 230px;
+    }
+}
 
 
 @media (max-width: 768px) {
@@ -379,21 +453,23 @@ footer {
     .catalog-section {
         padding: 2rem 1rem 0;
     }
-
 }
 
 
 @media (max-width: 767px) {
-    .hero-section {
+    .main-content {
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    .plant-section h2 {
         text-align: center;
+        font-size: 1.05rem;
+        margin-bottom: 22px;
     }
 
-    .min-vh-50 {
-        min-height: 42vh;
-    }
-
-    .section-space {
-        padding: 40px 0;
+    .plant-card {
+        border-radius: 8px;
     }
 
     .plant-img {
@@ -402,10 +478,43 @@ footer {
 
     .plant-card .p-4 {
         padding: 20px !important;
+        text-align: left !important;
+    }
+
+    .h5-text-color {
+        font-size: 1.18rem;
+    }
+
+    .plant-card ul {
+        font-size: 0.9rem;
+        line-height: 1.6;
     }
 }
 
+
 @media (max-width: 420px) {
+    .main-content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .plant-img {
+        height: 185px;
+    }
+
+    .plant-card .p-4 {
+        padding: 16px !important;
+    }
+
+    .h5-text-color {
+        font-size: 1.05rem;
+    }
+
+    .plant-card ul {
+        font-size: 0.84rem;
+    }
+
+
     .hero-section h1 {
         font-size: 2rem;
     }
@@ -418,3 +527,7 @@ footer {
         height: 190px;
     }
 }
+
+
+
+
