@@ -4,24 +4,26 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ROKKHA – Our Plants</title>
-    
-    <!-- Bootstrap 5 -->
+    <title>ROKKHA – Catalog</title>
+    <meta name="description"
+    content="ROKKHA Plant Shop helps you grow healthy indoor plants with easy care guides, plant collections, watering tips, 
+    lighting advice, and beginner-friendly plant recommendations.">
+    <meta name="keywords" content="plant shop, indoor plants, plant care guide, houseplants, plant care tips, Cambodia 
+    plant shop, ROKKHA, Monstera, Pothos, Calathea, Aglaonema, indoor gardening">
+    <meta name="author" content="ROKKHA Plant Shop">
+    <meta name="robots" content="index, follow">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet" />
-
     <link href="../css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <!-- ── NAVBAR ── -->
+    <!-- nav-->
     <nav class="navbar navbar-expand-md sticky-top">
         <div class="container-fluid px-2 px-md-4">
             <a class="navbar-brand" href="#">ROKKHA</a>
@@ -39,122 +41,261 @@
         </div>
     </nav>
 
-    <!-- ── HERO ── -->
+
+
+    
+
+    <!--rub -->
     <section class="page-hero">
         <div class="container-fluid px-2 px-md-4" style="max-width:1100px;margin:0 auto;">
             <h1>Our Plants</h1>
         </div>
     </section>
 
-    <!-- ── PRODUCT GRID ── -->
+    <!-- catalog card-->
     <main class="catalog-section">
         <div class="row g-4" id="product-grid">
 
-            <!-- Card template × 6 -->
-            <!-- Row 1 -->
+            <!-- Card 1 -->
             <div class="col-12 col-sm-6 col-lg-4">
-                <div class="product-card">
+                <div class="product-card" onclick="openDetails(this)" 
+                     data-name="Monstera Deliciosa" 
+                     data-price="24.99$" 
+                     data-image="../image/image 23.png" 
+                     data-details="Monstera Deliciosa, also known as the Swiss Cheese Plant, is famous for its iconic split leaves. It is an easy-to-grow, climbing plant that adds a tropical feel to any room. It prefers bright, indirect sunlight and watering only when the top soil feels dry.">
                     <div class="card-img-wrap">
-                        <div class="card-img-placeholder"><i class="bi bi-flower1"></i></div>
-                        <button class="btn-add">View Details</button>
+                        <img src="../image/image 23.png" alt="Monstera Deliciosa">
+                        <button class="btn-add">View Detail</button>
                     </div>
                     <div class="card-body">
-                        <p class="plant-name">Flower Plant</p>
-                        <p class="plant-desc">Good looking Plant</p>
-                        <p class="plant-price">12.99$</p>
+                        <p class="plant-name">Monstera Deliciosa</p>
+                        <p class="plant-desc">Popular indoor plant with split leaves</p>
+                        <p class="plant-price">24.99$</p>
                     </div>
                 </div>
             </div>
 
+            <!-- Card 2 -->
             <div class="col-12 col-sm-6 col-lg-4">
-                <div class="product-card">
+                <div class="product-card" onclick="openDetails(this)" 
+                     data-name="Bird's Nest Fern" 
+                     data-price="16.50$" 
+                     data-image="../image/image 29.png" 
+                     data-details="Bird's Nest Fern is characterized by its bright green, ripple-edged fronds that grow out of a central rosette. It grows well in moderate, indirect light and thrives in high humidity, making it perfect for bathrooms or kitchens.">
                     <div class="card-img-wrap">
-                        <div class="card-img-placeholder"><i class="bi bi-flower2"></i></div>
-                        <button class="btn-add">View Details</button>
+                        <img src="../image/image 29.png" alt="Bird's Nest Fern">
+                        <button class="btn-add">View Detail</button>
                     </div>
                     <div class="card-body">
-                        <p class="plant-name">Flower Plant</p>
-                        <p class="plant-desc">Good looking Plant</p>
-                        <p class="plant-price">12.99$</p>
+                        <p class="plant-name">Bird's Nest Fern</p>
+                        <p class="plant-desc">Vibrant green wavy fronds</p>
+                        <p class="plant-price">16.50$</p>
                     </div>
                 </div>
             </div>
 
+            <!-- Card 3 -->
             <div class="col-12 col-sm-6 col-lg-4">
-                <div class="product-card">
+                <div class="product-card" onclick="openDetails(this)" 
+                     data-name="Aloe Vera" 
+                     data-price="9.99$" 
+                     data-image="../image/image 34.png" 
+                     data-details="Aloe Vera is a durable succulent known for its soothing gel. It needs very little water and thrives in bright, sunny spots. A must-have plant for both its beautiful spiky appearance and its medicinal benefits.">
                     <div class="card-img-wrap">
-                        <div class="card-img-placeholder"><i class="bi bi-tree"></i></div>
-                        <button class="btn-add">AView Details</button>
+                        <img src="../image/image 34.png" alt="Aloe Vera">
+                        <button class="btn-add">View Detail</button>
                     </div>
                     <div class="card-body">
-                        <p class="plant-name">Flower Plant</p>
-                        <p class="plant-desc">Good looking Plant</p>
-                        <p class="plant-price">12.99$</p>
+                        <p class="plant-name">Aloe Vera</p>
+                        <p class="plant-desc">Easy to grow succulent with healing gel</p>
+                        <p class="plant-price">9.99$</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Row 2 -->
+            <!-- Card 4 -->
             <div class="col-12 col-sm-6 col-lg-4">
-                <div class="product-card">
+                <div class="product-card" onclick="openDetails(this)" 
+                     data-name="Calathea Velvet" 
+                     data-price="18.99$" 
+                     data-image="../image/image 35.png" 
+                     data-details="Calathea Velvet, with its soft, velvet-textured leaves, features deep green topsides and beautiful purple undersides. It thrives in high humidity and medium, indirect light, moving its leaves up at night and down during the day.">
                     <div class="card-img-wrap">
-                        <div class="card-img-placeholder"><i class="bi bi-flower1"></i></div>
-                        <button class="btn-add">View Details</button>
+                        <img src="../image/image 35.png" alt="Calathea Velvet">
+                        <button class="btn-add">View Detail</button>
                     </div>
                     <div class="card-body">
-                        <p class="plant-name">Flower Plant</p>
-                        <p class="plant-desc">Good looking Plant</p>
-                        <p class="plant-price">12.99$</p>
+                        <p class="plant-name">Calathea Velvet</p>
+                        <p class="plant-desc">Soft, fuzzy leaves with unique patterns</p>
+                        <p class="plant-price">18.99$</p>
                     </div>
                 </div>
             </div>
 
+            <!-- Card 5 -->
             <div class="col-12 col-sm-6 col-lg-4">
-                <div class="product-card">
+                <div class="product-card" onclick="openDetails(this)" 
+                     data-name="Fiddle Leaf Fig (Mini)" 
+                     data-price="15.99$" 
+                     data-image="../image/image 36.png" 
+                     data-details="A compact version of the popular Fiddle Leaf Fig. It features the same stunning, violin-shaped glossy leaves but in a smaller size suitable for desks or small shelves. Prefers steady, bright indirect light.">
                     <div class="card-img-wrap">
-                        <div class="card-img-placeholder"><i class="bi bi-flower2"></i></div>
-                        <button class="btn-add">View Details</button>
+                        <img src="../image/image 36.png" alt="Fiddle Leaf Fig (Mini)">
+                        <button class="btn-add">View Detail</button>
                     </div>
                     <div class="card-body">
-                        <p class="plant-name">Flower Plant</p>
-                        <p class="plant-desc">Good looking Plant</p>
-                        <p class="plant-price">12.99$</p>
+                        <p class="plant-name">Fiddle Leaf Fig (Mini)</p>
+                        <p class="plant-desc">Dramatic violin-shaped glossy leaves</p>
+                        <p class="plant-price">15.99$</p>
                     </div>
                 </div>
             </div>
 
+            <!-- Card 6 -->
             <div class="col-12 col-sm-6 col-lg-4">
-                <div class="product-card">
+                <div class="product-card" onclick="openDetails(this)" 
+                     data-name="Pilea Peperomioides" 
+                     data-price="12.00$" 
+                     data-image="../image/image 37.png" 
+                     data-details="Also known as the Chinese Money Plant, Pilea Peperomioides has round, coin-like leaves that float on long stems. It is a fast grower that easily produces babies you can share with friends. Thrives in bright indirect light.">
                     <div class="card-img-wrap">
-                        <div class="card-img-placeholder"><i class="bi bi-tree"></i></div>
-                        <button class="btn-add">View Details</button>
+                        <img src="../image/image 37.png" alt="Pilea Peperomioides">
+                        <button class="btn-add">View Detail</button>
                     </div>
                     <div class="card-body">
-                        <p class="plant-name">View Details</p>
-                        <p class="plant-desc">Good looking Plant</p>
-                        <p class="plant-price">12.99$</p>
+                        <p class="plant-name">Pilea Peperomioides</p>
+                        <p class="plant-desc">Cute pancake-shaped circular leaves</p>
+                        <p class="plant-price">12.00$</p>
                     </div>
                 </div>
             </div>
 
-        </div><!-- /row -->
+            <!-- Card 7 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card" onclick="openDetails(this)" 
+                     data-name="Alocasia Elephant Ear" 
+                     data-price="22.50$" 
+                     data-image="../image/image 40.png" 
+                     data-details="Alocasia Elephant Ear stands out with its large, dramatic, arrow-shaped leaves and contrasting pale veins. It loves warm temperatures, high humidity, and consistently moist, well-draining soil.">
+                    <div class="card-img-wrap">
+                        <img src="../image/image 40.png" alt="Alocasia Elephant Ear">
+                        <button class="btn-add">View Detail</button>
+                    </div>
+                    <div class="card-body">
+                        <p class="plant-name">Alocasia Elephant Ear</p>
+                        <p class="plant-desc">Large, striking arrow-shaped leaves</p>
+                        <p class="plant-price">22.50$</p>
+                    </div>
+                </div>
+            </div>
 
-        <!-- ── PAGINATION ── -->
-        <div class="pagination-wrap">
-            <button class="dot active" aria-label="Page 1"></button>
-            <button class="dot" aria-label="Page 2"></button>
-            <button class="dot" aria-label="Page 3"></button>
-            <button class="arrow-btn" aria-label="Next page">
-                <i class="bi bi-chevron-right"></i>
-            </button>
+            <!-- Card 8 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card" onclick="openDetails(this)" 
+                     data-name="Bird of Paradise" 
+                     data-price="28.00$" 
+                     data-image="../image/image 40 (1).png" 
+                     data-details="Bird of Paradise is a majestic houseplant that brings an instant tropical vibe with its large, banana-like leaves. It thrives in bright light, including direct sunlight, and is relatively easy to care for.">
+                    <div class="card-img-wrap">
+                        <img src="../image/image 40 (1).png" alt="Bird of Paradise">
+                        <button class="btn-add">View Detail</button>
+                    </div>
+                    <div class="card-body">
+                        <p class="plant-name">Bird of Paradise</p>
+                        <p class="plant-desc">Tall, elegant tropical plant</p>
+                        <p class="plant-price">28.00$</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card" onclick="openDetails(this)" 
+                     data-name="Monstera Borsigiana" 
+                     data-price="19.99$" 
+                     data-image="../image/image 40 (2).png" 
+                     data-details="Monstera Borsigiana is a fast-growing variety of Monstera that features beautiful heart-shaped leaves with distinct fenestrations. It is highly adaptable and climbs beautifully when provided with a moss pole.">
+                    <div class="card-img-wrap">
+                        <img src="../image/image 40 (2).png" alt="Monstera Borsigiana">
+                        <button class="btn-add">View Detail</button>
+                    </div>
+                    <div class="card-body">
+                        <p class="plant-name">Monstera Borsigiana</p>
+                        <p class="plant-desc">Classic lush green, perfect for corners</p>
+                        <p class="plant-price">19.99$</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card" onclick="openDetails(this)" 
+                     data-name="Fiddle Leaf Fig (Large)" 
+                     data-price="35.00$" 
+                     data-image="../image/image 40 (3).png" 
+                     data-details="This large, statement Fiddle Leaf Fig is a stunning interior tree. Its tall silhouette and broad, leathery, violin-shaped leaves instantly elevate any living space. Requires bright, indirect light and careful watering.">
+                    <div class="card-img-wrap">
+                        <img src="../image/image 40 (3).png" alt="Fiddle Leaf Fig (Large)">
+                        <button class="btn-add">View Detail</button>
+                    </div>
+                    <div class="card-body">
+                        <p class="plant-name">Fiddle Leaf Fig (Large)</p>
+                        <p class="plant-desc">Tall interior tree with large</p>
+                        <p class="plant-price">35.00$</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card" onclick="openDetails(this)" 
+                     data-name="Ficus Elastica" 
+                     data-price="18.50$" 
+                     data-image="../image/image 40 (4).png" 
+                     data-details="Ficus Elastica, commonly known as the Rubber Plant, features thick, shiny, dark green leaves. It is a highly efficient air-purifying plant that grows into a beautiful indoor tree with minimal care.">
+                    <div class="card-img-wrap">
+                        <img src="../image/image 40 (4).png" alt="Ficus Elastica">
+                        <button class="btn-add">View Detail</button>
+                    </div>
+                    <div class="card-body">
+                        <p class="plant-name">Ficus Elastica</p>
+                        <p class="plant-desc">Glossy, dark-green leaves that purify the air</p>
+                        <p class="plant-price">18.50$</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card" onclick="openDetails(this)" 
+                     data-name="Calathea Orbifolia" 
+                     data-price="24.99$" 
+                     data-image="../image/image 40 (6).png" 
+                     data-details="Calathea Orbifolia is a stunning indoor plant famous for its large, round leaves with beautiful silver-green stripes. It thrives in warm, humid environments and prefers bright, indirect sunlight. Keep the soil consistently moist but never waterlogged. It is completely non-toxic and pet-friendly, making it a perfect and safe decorative piece for your living room, bedroom, or office space.">
+                    <div class="card-img-wrap">
+                        <img src="../image/image 40 (6).png" alt="Calathea Orbifolia">
+                        <button class="btn-add">View Detail</button>
+                    </div>
+                    <div class="card-body">
+                        <p class="plant-name">Calathea Orbifolia</p>
+                        <p class="plant-desc">Large striped tropical</p>
+                        <p class="plant-price">24.99$</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-
     </main>
 
-    <!-- ── FOOTER ── -->
+
+
+
+
+
+    <!-- footer -->
     <footer>
         <div class="footer-inner">
-            <!-- Brand -->
+        
             <div>
                 <span class="footer-brand-name">ROKKHA</span>
                 <p class="footer-tagline">We help you find<br>your dream plant</p>
@@ -165,20 +306,18 @@
                 </div>
             </div>
 
-            <!-- Quick Links -->
+    
             <div class="footer-col">
                 <h6>Quick Links</h6>
                 <ul>
                     <li><a href="home.html">Home</a></li>
-                    <li><a href="care_guide.html">Care Guide</a></li>
-                    <li><a href="about.html">Our Story</a></li>
                     <li><a href="catalog.html">Catalog</a></li>
                     <li><a href="care_guide.html">Care Guide</a></li>
                     <li><a href="about.html">Our Story</a></li>
                 </ul>
             </div>
 
-            <!-- Contact -->
+    
             <div class="footer-col">
                 <h6>Contact Us</h6>
                 <ul>
@@ -190,16 +329,62 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- peal user click button hz vea show detail-->
+    <div class="detail-modal" id="plant-modal">
+        <div class="modal-card">
+            <div class="modal-top">
+                <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
+                <img src="" alt="" class="modal-img" id="modal-img">
+            </div>
+            <div class="modal-bottom">
+                <h2 class="modal-title" id="modal-title"></h2>
+                <div class="modal-price" id="modal-price"></div>
+                <h3 class="modal-subtitle">Plant Details</h3>
+                <p class="modal-desc" id="modal-desc"></p>
+            </div>
+        </div>
+    </div>
+
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+
     <script>
-        // Simple dot pagination interaction
-        const dots = document.querySelectorAll('.dot');
-        dots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                dots.forEach(d => d.classList.remove('active'));
-                dot.classList.add('active');
+        // berk detail peal user click button view detail
+        function openDetails(card) {
+            const modal = document.getElementById("plant-modal");
+            const modalImg = document.getElementById("modal-img");
+            const modalTitle = document.getElementById("modal-title");
+            const modalPrice = document.getElementById("modal-price");
+            const modalDesc = document.getElementById("modal-desc");
+
+            modalImg.src = card.getAttribute("data-image");
+            modalImg.alt = card.getAttribute("data-name");
+            modalTitle.textContent = card.getAttribute("data-name");
+            modalPrice.textContent = card.getAttribute("data-price");
+            modalDesc.textContent = card.getAttribute("data-details");
+
+            modal.classList.add("active");
+        }
+
+        // Wait until the page loads to setup closing behaviors
+        document.addEventListener("DOMContentLoaded", () => {
+            const modal = document.getElementById("plant-modal");
+            const closeBtn = document.getElementById("modal-close");
+
+            // Close modal function
+            const closeModal = () => {
+                modal.classList.remove("active");
+            };
+
+            // Close modal on close button click
+            closeBtn.addEventListener("click", closeModal);
+
+            // Close modal when clicking background overlay
+            modal.addEventListener("click", (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
             });
         });
     </script>
