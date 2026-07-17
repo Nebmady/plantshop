@@ -271,7 +271,7 @@ footer {
 /* care plant web page Hero Image with text */
 
 .care-hero{
-    background:url("../image/care_hero.jpg") center center/cover no-repeat;
+    background:url("image/care_hero.jpg") center center/cover no-repeat;
     height:350px;
     display:flex;
     align-items:center;
@@ -527,7 +527,7 @@ footer {
   
   .hero-banner {
     height: 450px;
-    background:url("../image/image\ 39.png") center center/cover no-repeat;
+    background:url("image/image\ 39.png") center center/cover no-repeat;
     background-size: cover;
     background-position: center 35%;
     display: flex;
