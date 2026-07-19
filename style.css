@@ -83,6 +83,20 @@ body {
 }
 
 /* catalog */
+.page-hero{
+    background:url("image/pagehero.jpg") center center/cover no-repeat;
+    height:350px;
+    display:flex;
+    align-items:center;
+    color:white;
+}
+.page-hero h1{
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:15px;
+    text-align:center;
+}
+
 .catalog-section {
     padding: 3.5rem 2rem 1rem;
     max-width: 1100px;
@@ -425,6 +439,7 @@ footer {
     animation: modalShow 0.3s ease;
 }
 
+/* animation */
 @keyframes modalShow {
     from {
         opacity: 0;
