@@ -329,7 +329,7 @@
         </div>
     </footer>
 
-    <!-- peal user click button hz vea show detail-->
+    <!-- popup window that shows the information nicely. peal user click button hz vea show detail-->
     <div class="detail-modal" id="plant-modal">
         <div class="modal-card">
             <div class="modal-top">
@@ -350,6 +350,7 @@
 
 
     <script>
+        // function open model popup
         // berk detail peal user click button view detail
         function openDetails(card) {
             const modal = document.getElementById("plant-modal");
@@ -363,24 +364,21 @@
             modalTitle.textContent = card.getAttribute("data-name");
             modalPrice.textContent = card.getAttribute("data-price");
             modalDesc.textContent = card.getAttribute("data-details");
-
-            modal.classList.add("active");
+ //pop up appear 
+            modal.classList.add("active"); 
         }
 
-        // Wait until the page loads to setup closing behaviors
+
         document.addEventListener("DOMContentLoaded", () => {
             const modal = document.getElementById("plant-modal");
             const closeBtn = document.getElementById("modal-close");
-
-            // Close modal function
             const closeModal = () => {
                 modal.classList.remove("active");
             };
 
-            // Close modal on close button click
             closeBtn.addEventListener("click", closeModal);
 
-            // Close modal when clicking background overlay
+        
             modal.addEventListener("click", (e) => {
                 if (e.target === modal) {
                     closeModal();
